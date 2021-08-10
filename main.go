@@ -1,18 +1,17 @@
 package main
 
-func main() {
-
+func add(n, add int) int {
+	for i := 1; i <= add; i++ {
+			n ++
+	}
+	return n
 }
 
-
-
-func Count(n, add int) int {
-	//return n + add
-
-	//for i := 1; i <= add; i++ {
-	for i := 1; i < add; i++ {
-			n = n + 1
+func multiply(n, multiplyBy int) int {
+	result := n
+	for i := 1; i < multiplyBy; i++ {
+		result = add(result, n)
 	}
 
-	return n
+	return result
 }
