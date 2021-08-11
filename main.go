@@ -14,4 +14,5 @@ func multiply(n, multiplyBy int) int {
 		result = add(result, n)
 	}
 	return result
+
 }
