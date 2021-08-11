@@ -1,10 +1,11 @@
 package main
 
+func main() {
+	println(add(100,100))
+}
+
 func add(n, add int) int {
-	for i := 1; i <= add; i++ {
-			n ++
-	}
-	return n
+	return n+add
 }
 
 func multiply(n, multiplyBy int) int {
@@ -12,6 +13,5 @@ func multiply(n, multiplyBy int) int {
 	for i := 1; i < multiplyBy; i++ {
 		result = add(result, n)
 	}
-
 	return result
 }
